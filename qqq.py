@@ -35,7 +35,7 @@ class Youdao(object):
         # 请求体的长度
         "Content-Length": str(len(str(data))),
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "Cookie": "pgv_pvi=3994058752; ptui_loginuin=962714000; fy_guid=f5d9a428-cc79-49dd-b775-130b92b90cd5; ts_refer=www.google.com/; pgv_pvid=3787775825; ts_uid=1687449336; gr_user_id=0c6d3dcc-13d7-4396-be80-3d645949b693; grwng_uid=a770616a-553e-4354-b0f1-136d30f33d60; pgv_info=ssid=s9058691778; ts_last=fanyi.qq.com/; 9c118ce09a6fa3f4_gr_session_id=b5e9114d-f07d-43ca-929d-693c65d6ac07; 8c66aca9f0d1ff2e_gr_session_id=7b8290ab-d993-45c1-bf49-5cfaea106e5a; 9c118ce09a6fa3f4_gr_session_id_b5e9114d-f07d-43ca-929d-693c65d6ac07=true; qtv=e815966a57175ce4; qtk=nl10vs4Mbu6r6/fWR2Bp3xIi16fs5hdcBE66NvTtKhtzIoEetOSRKgTmFcEVTGRPnZcSTfvjr9/gqb27KeimKNLAUetWQfAyspVZ+vBQ+TGXoUITQyhyRxZqbVfETYwsi1PPIx4Y4OvFRCjYuZ2pHg==; openCount=4"
+        "Cookie": "pgv_pvi=3994058752;fy_guid=f5d9a428-cc79-49dd-b775-130b92b90cd5; ts_refer=www.google.com/; pgv_pvid=3787775825; ts_uid=1687449336; gr_user_id=0c6d3dcc-13d7-4396-be80-3d645949b693; grwng_uid=a770616a-553e-4354-b0f1-136d30f33d60; pgv_info=ssid=s9058691778; ts_last=fanyi.qq.com/; 9c118ce09a6fa3f4_gr_session_id=b5e9114d-f07d-43ca-929d-693c65d6ac07; 8c66aca9f0d1ff2e_gr_session_id=7b8290ab-d993-45c1-bf49-5cfaea106e5a; 9c118ce09a6fa3f4_gr_session_id_b5e9114d-f07d-43ca-929d-693c65d6ac07=true; qtv=e815966a57175ce4; qtk=nl10vs4Mbu6r6/fWR2Bp3xIi16fs5hdcBE66NvTtKhtzIoEetOSRKgTmFcEVTGRPnZcSTfvjr9/gqb27KeimKNLAUetWQfAyspVZ+vBQ+TGXoUITQyhyRxZqbVfETYwsi1PPIx4Y4OvFRCjYuZ2pHg==; openCount=4"
         }
         html = requests.post(self.url, data=data, headers=headers).text
         print(html)
